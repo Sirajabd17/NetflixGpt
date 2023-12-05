@@ -14,6 +14,20 @@
 -implement sign is user Api
 -Create redux store with userSlice
 -implement sign out
+-update profile api call
+-Bugfix:signup user displays and profile picture update
+-bugfix if the user is not loogged in redirect/ browse to login page vice versa
+-unsubscribe to the onauthstatechanged callback
+-add hardcoded value to the constant file
+-register tmdb api and create an app and get access token
+-get data from tmdb playing movies list api
+-create moviesSlice
+-Update store with movies data
+-planing for maincontainer and secondary container
+-fetch data from trailer video
+-updata store with Trailer video
+-embedded the youtube video and make it and auto play
+-tailwind classes to make main container look awesome
 
 # Feature
 
