@@ -28,6 +28,14 @@
 - Updata store with Trailer video
 - Embedded the youtube video and make it and auto play
 - Tailwind classes to make main container look awesome
+- Build Secondary Component
+- Build Movies List
+- Build Movies Card
+- TMDB Image CDN URL
+- Made the Browsre page amazing with Tailwind css
+- use PopularMovies custom hook
+- use TopRatedMovies custom hook
+- use UpcomingMoies custom hook
 
 # Feature
 

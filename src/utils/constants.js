@@ -11,3 +11,6 @@ export const API_OPTIONS = {
       "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0MTUxMmJiODExMWIxZmIxZDM1Mzg0YjZmM2Y1YjVjZCIsInN1YiI6IjY1NmRkNzdmODg2MzQ4MDE0ZDg1NDIxOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.dFNLoTpU3hL44GfPZ8XAc2SJMznXRYMYQh6wSS2HjYY",
   },
 };
+
+// movies image url
+export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w300";
