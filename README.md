@@ -36,6 +36,10 @@
 - use PopularMovies custom hook
 - use TopRatedMovies custom hook
 - use UpcomingMoies custom hook
+- GPT search bar
+- GPT search page
+- Multi-language feature in our app
+- Integrate GPT APIS( get from Openai)
 
 # Feature
 

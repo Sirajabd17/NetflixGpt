@@ -11,6 +11,7 @@ import { auth } from "../utils/firebase";
 import { useDispatch } from "react-redux";
 import { addUser } from "../utils/userSlice";
 import { USER_AVTAR } from "../utils/constants";
+import { BG_URL } from "../utils/constants";
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true); // use for sign in /signup change on click of button
@@ -107,7 +108,7 @@ const Login = () => {
       <div className="absolute">
         <img
           className=".bg-no-repeat bg-fixed .bg-center"
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/d1532433-07b1-4e39-a920-0f08b81a489e/67033404-2df8-42e0-a5a0-4c8288b4da2c/IN-en-20231120-popsignuptwoweeks-perspective_alpha_website_medium.jpg"
+          src={BG_URL}
           alt="logo"
         />
       </div>
