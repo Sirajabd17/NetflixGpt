@@ -63,42 +63,44 @@ const Header = () => {
   };
 
   return (
-    <div className="absolute  w-screen px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
-      <img className="w-44" src={LOGO} alt="logo" />
-      {user && (
-        <div className="flex ">
-          {showGptSearch && (
-            <select
-              className="px-2 mt-2 mr-4 h-10 w-30 rounded-lg bg-gray-600 text-white"
-              onChange={handleLanguageChange}
-            >
-              {SUPPORTED_LANGUAGES.map((lang) => (
-                <option key={lang.identifier} value={lang.identifier}>
-                  {lang.name}
-                </option>
-              ))}
-            </select>
-          )}
+    <div>
+      <div className="absolute  w-screen px-8 py-2 bg-gradient-to-b from-black z-10  flex flex-col md:flex-row  justify-between">
+        <img className="w-44 mx-auto md:mx-0" src={LOGO} alt="logo" />
+        {user && (
+          <div className="flex  p-2 justify-between">
+            {showGptSearch && (
+              <select
+                className="px-2 mt-2 mr-4 h-10 w-30 rounded-lg bg-gray-600 text-white"
+                onChange={handleLanguageChange}
+              >
+                {SUPPORTED_LANGUAGES.map((lang) => (
+                  <option key={lang.identifier} value={lang.identifier}>
+                    {lang.name}
+                  </option>
+                ))}
+              </select>
+            )}
 
-          <button
-            className="text-white rounded-md bg-purple-600 h-10 w-30 mr-4 mt-2 px-4"
-            onClick={handleGptSearchClick}
-          >
-            {showGptSearch ? "Homepage" : "GPT Search"}
-          </button>
-          <img
-            className="w-12 h-12 rounded-3xl mr-2"
-            alt="usericon"
-            src={user?.photoURL}
-          />
-          <button
-            onClick={handleSignOut}
-            className="font-bold text-red-600 mb-4"
-          >
-            Sign Out
-          </button>
-        </div>
-      )}
+            <button
+              className="text-white rounded-md bg-purple-600 h-10 w-30 mr-4 mt-2 px-4"
+              onClick={handleGptSearchClick}
+            >
+              {showGptSearch ? "Homepage" : "GPT Search"}
+            </button>
+            <img
+              className="  hidden md:block w-12 h-12 rounded-3xl mr-2"
+              alt="usericon"
+              src={user?.photoURL}
+            />
+            <button
+              onClick={handleSignOut}
+              className="font-bold text-red-600 mb-4"
+            >
+              Sign Out
+            </button>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
